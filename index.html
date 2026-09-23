@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>她的名字 — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>她的名字 — HER WORDS (Demo)</h1>
+    <p class="disclaimer">16+ • 词语含有敏感/污名词汇，点击可见详情</p>
+  </header>
+
+  <main>
+    <section class="face-area">
+      <svg id="face-svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet" aria-label="词形脸，点击词语查看详情">
+        <defs>
+          <!-- simple oval face clip -->
+          <clipPath id="face-clip">
+            <ellipse cx="400" cy="360" rx="320" ry="360"></ellipse>
+          </clipPath>
+        </defs>
+
+        <g id="text-group" clip-path="url(#face-clip)">
+          <!-- scrolling text container populated by JS -->
+          <g id="scroll-container" transform="translate(0,0)"></g>
+        </g>
+
+        <!-- decorative face outline -->
+        <ellipse cx="400" cy="360" rx="320" ry="360" fill="none" stroke="#222" stroke-width="4" opacity="0.6" />
+      </svg>
+
+      <div class="controls">
+        <button id="all-words-btn" class="small">全部词条 / 搜索</button>
+        <p class="footer-hint">词由人写，人由词塑 — 悬停可暂停滚动</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- detail modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" class="close">✕</button>
+      <h2 id="modal-title">词条</h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- all-words / search panel -->
+  <aside id="word-panel" class="side-panel" aria-hidden="true">
+    <div class="panel-backdrop" id="panel-backdrop"></div>
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+      <button id="panel-close" class="close">✕</button>
+      <h3 id="panel-title">全部词条</h3>
+      <input id="panel-search" type="search" placeholder="搜索词条" aria-label="搜索词条" />
+      <div id="word-list" class="word-list" tabindex="0" aria-live="polite"></div>
+    </div>
+  </aside>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
