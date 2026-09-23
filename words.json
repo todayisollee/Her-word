@@ -1,0 +1,40 @@
+[
+  {
+    "word": "bitch",
+    "lang": "en",
+    "freq": 120,
+    "acts": {
+      "origin": "Originally meant female dog; semantic shift over time.",
+      "pejoration": "Became an insult targeting women and behavior.",
+      "peakStigma": "Reached high stigma around late 20th century.",
+      "reclamation": {
+        "summary": "Artists and activists reappropriated the term in the 1990s–2000s.",
+        "timeline": [
+          {
+            "year": "1997",
+            "event": "Meredith Brooks releases 'Bitch' (popular reclaiming moment).",
+            "media": { "type": "song", "title": "Bitch", "artist": "Meredith Brooks", "coverImage": "PLACEHOLDER", "lyricExcerpt": "PLACEHOLDER" }
+          },
+          {
+            "year": "2010",
+            "event": "Feminist writers discuss reusing the word to subvert stigma.",
+            "media": { "type": "article", "title": "On reclaiming words", "artist": "" }
+          }
+        ]
+      },
+      "now": "Still charged, but also used reclaimingly in many contexts."
+    }
+  },
+  {
+    "word": "witch",
+    "lang": "en",
+    "freq": 70,
+    "acts": {"origin":"Historical label for alleged magic users.","pejoration":"Used to target women in persecutions.","peakStigma":"Early modern witch trials.","reclamation":{"summary":"Modern reclaiming via pop culture and feminism.","timeline":[{"year":"1996","event":"Popular culture renewed interest in witchcraft","media":{"type":"film","title":"The Craft","artist":""}}]},"now":"Used both pejoratively and proudly."}
+  },
+  {
+    "word": "婊子",
+    "lang": "zh",
+    "freq": 90,
+    "acts": {"origin":"古汉语词源...","pejoration":"现代口语成为侮辱词","peakStigma":"常被用作性别化攻击","reclamation":{"summary":"部分艺术家在作品中反思并试图转化该词","timeline":[]},"now":"仍具侮辱性，语境决定是否可回收"}
+  }
+]
